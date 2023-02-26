@@ -1,0 +1,18 @@
+---
+pool: Default
+
+trigger:
+- main
+
+stages:
+- stage: Build
+  displayName: Build code
+- stage: Test
+  displayName: Test code
+  jobs:
+  - job: testthecode
+    steps:
+    - task: PipAuthenticate@1
+      
+
+    
